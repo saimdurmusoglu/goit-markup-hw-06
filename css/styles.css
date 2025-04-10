@@ -326,7 +326,7 @@ main {
 }
 
 /* mobile address properties */
-address {
+.navbar address {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -335,7 +335,7 @@ address {
   margin-bottom: 48px;
 }
 
-address a {
+.navbar address a {
   color: var(--slate);
   font-weight: var(--medium);
   font-size: 20px;
@@ -347,16 +347,16 @@ address a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-address a:hover {
+.navbar address a:hover {
   color: var(--ocean);
 }
 
-address a:first-child {
+.navbar address a:first-child {
   position: absolute;
   top: 48px;
 }
 
-address a:last-child {
+.navbar address a:last-child {
   color: var(--ocean);
 }
 
@@ -752,7 +752,7 @@ address a:last-child {
 .modal-content {
   position: relative;
   width: 288px;
-  /* height: 623px; */
+  height: 623px;
   background-color: var(--white);
   border-radius: 4px;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.12),
@@ -762,15 +762,15 @@ address a:last-child {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 16px 16px 24px 16px;
+  padding: 24px 16px;
 }
 
 .modal-content .icons {
   display: flex;
   justify-content: flex-end;
-  width: 240px;
+  width: 256px;
   height: 24px;
-  margin: 8px 8px 24px;
+  margin: 0px 0px 24px;
 }
 
 .modal-content .icons .icon-link {
@@ -804,16 +804,17 @@ address a:last-child {
 
 .modal-content .form-contact {
   width: 256px;
+  height: 336px;
   text-align: justify;
 }
 
 .modal-content .form-contact .form-label {
   position: relative;
   width: 256px;
-  /* height: 31px; */
+  height: 58px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   align-self: flex-start;
   color: var(--light-slate);
   margin-bottom: 8px;
@@ -854,8 +855,21 @@ address a:last-child {
   top: 36px;
 }
 
-.modal-content .form-contact .form-label .form-textarea {
+.modal-content .form-contact .form-label-3 {
+  position: relative;
+  width: 256px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-self: flex-start;
+  color: var(--light-slate);
+  margin-bottom: 16px;
+}
+
+.modal-content .form-contact .form-label-3 .form-textarea {
   width: 100%;
+  height: 120px;
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
   padding: 8px 16px;
@@ -1130,7 +1144,7 @@ address a:last-child {
 
   /* container properties */
   .container {
-    max-width: 768px;
+    min-width: 768px;
   }
 
   /* header properties */
@@ -1222,6 +1236,7 @@ address a:last-child {
     height: 14px;
     padding: 0;
     font-weight: var(--regular);
+    font-style: normal;
     font-size: 12px;
     /* line-height: 1.16; */
     letter-spacing: 0.48px; /* %4 harf aralığı - 12px font büyüklüğü için 0.48px eder */
@@ -1250,7 +1265,8 @@ address a:last-child {
   }
 
   .hero .container {
-    width: 768px;
+    width: 100%;
+    min-width: 768px;
     height: 436px;
     gap: 36px;
     padding: 112px 136px;
@@ -1270,8 +1286,13 @@ address a:last-child {
   }
 
   /* services */
+  .services {
+    /* margin: 0 auto; */
+    padding: 0;
+  }
+
   .services .container {
-    margin: 0px 16px;
+    padding: 0px 16px;
   }
 
   .services ul {
@@ -1358,6 +1379,48 @@ address a:last-child {
   .portfolio .card {
     flex-basis: calc((100% - 24px) / 2);
     margin-bottom: 48px;
+  }
+
+  /* contacts modal div properties */
+  .modal-content {
+    width: 408px;
+    height: 584px;
+    margin: 96px auto;
+    padding: 24px;
+  }
+
+  .modal-content .icons {
+    width: 360px;
+  }
+
+  .modal-content .form-contact {
+    width: 360px;
+  }
+
+  .modal-content .form-contact .form-label {
+    width: 360px;
+  }
+
+  .modal-content .form-contact .form-label .form-input {
+    padding: 8px 34px;
+  }
+
+  .modal-content .form-contact .form-label .icon {
+    top: 32px;
+  }
+
+  .modal-content .form-contact .form-label-3 {
+    width: 360px;
+  }
+
+  .modal-content .form-contact .form-label-2 {
+    width: 360px;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .form-contact .form-button {
+    margin-left: 95px;
   }
 
   /* footer */
@@ -1447,6 +1510,209 @@ address a:last-child {
 
   /* container properties */
   .container {
-    max-width: 1158px;
+    min-width: 1158px;
+  }
+
+  /* header properties */
+  .page-header {
+    width: 1440px;
+  }
+
+  .page-header .container {
+    gap: 76px;
+  }
+
+  /* navbar properties */
+  .navbar {
+    width: 937px;
+    gap: 332px;
+  }
+
+  /* mobile address properties */
+  .navbar address {
+    flex-direction: row;
+    gap: 40px;
+    width: 344px;
+  }
+
+  .navbar address a {
+    width: 153px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px; /* %2 harf aralığı - 16px font büyüklüğü için 0.32px eder */
+  }
+
+  .navbar address a:last-child {
+    opacity: 0.51;
+  }
+
+  /* hero */
+  .hero {
+    width: 1440px;
+    height: 600px;
+  }
+
+  .hero .container {
+    width: 100%;
+    min-width: 1440px;
+    height: 600px;
+    gap: 48px;
+    padding: 188px 472px;
+  }
+
+  .hero .container::after {
+    width: 100%;
+    height: 600px;
+  }
+
+  /* services */
+  .services {
+    padding: 0;
+  }
+
+  .services .container {
+    padding: 0px 15px;
+  }
+
+  .services ul {
+    width: 1128px;
+    height: 224px;
+  }
+
+  .services li {
+    flex-basis: calc((100% - 72px) / 4);
+    text-align: left;
+    width: 264px;
+    height: 224px;
+    max-height: 224px;
+    margin-bottom: 8px;
+  }
+
+  .services li .baslik {
+    font-weight: var(--medium);
+    font-size: 20px;
+    letter-spacing: 0.4px; /* %2 harf aralığı - 20px font büyüklüğü için 0.40px eder */
+    width: 264px;
+    height: 24px;
+    margin-bottom: 8px;
+  }
+
+  .services li p {
+    font-weight: var(--regular);
+    width: 264px;
+    height: 72px;
+  }
+
+  .services ul li .icon-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background-color: var(--cloud);
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .services ul li .icon-container .icon {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  /* team */
+  .team {
+    padding: 0;
+  }
+
+  .team .container {
+    padding: 120px 15px;
+    width: 1440px;
+    height: 780px;
+  }
+
+  .team ul {
+    width: 1128px;
+    height: 428px;
+    /* margin: 0 auto; */
+  }
+
+  .team li {
+    flex-basis: calc((100% - 72px) / 4);
+    width: 264px;
+    height: 428px;
+  }
+
+  .team .social-links {
+    height: 40px;
+    width: 232px;
+    margin: 0 16px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  /* portfolio */
+  .portfolio .container {
+    padding: 0 15px;
+  }
+
+  .portfolio .card {
+    flex-basis: calc((100% - 48px) / 3);
+    margin-bottom: 48px;
+  }
+
+  .portfolio .card .img-box .hover-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 360px;
+    height: 300px;
+    background-color: var(--iris);
+    color: var(--white);
+    display: block;
+    z-index: 200;
+    padding: 40px 32px;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .portfolio .card:hover > .img-box .hover-box {
+    transform: scaleY(1);
+  }
+
+  /* contacts modal div properties */
+  .modal-content {
+    margin: 80px auto;
+  }
+
+  /* footer */
+  .page-footer {
+    height: 312px;
+    /* margin-bottom: 0; */
+    padding: 0 15px;
+  }
+
+  .page-footer .container {
+    width: 1158px;
+    gap: 80px;
+  }
+
+  .page-footer .ft-logo {
+    height: 112px;
+    margin-bottom: 0px;
+    margin-right: 40px;
+  }
+
+  .page-footer .social {
+    width: 208px;
+    height: 80px;
   }
 }

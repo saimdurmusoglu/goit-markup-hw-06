@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ödev #5 - Sdurmusoglu</title>
+    <title>Ödev #6 - Sdurmusoglu</title>
 
     <!-- normalize.css link ekleme -->
     <link rel="stylesheet" href="./css/normalize.min.css" />
@@ -530,7 +530,7 @@
           <form class="form-contact" name="contact_form" autocomplete="off">
             <label class="form-label small">
               Name
-              <input class="form-input" type="text" name="name" />
+              <input class="form-input" type="text" name="name" autofocus />
               <svg class="icon">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
@@ -549,14 +549,16 @@
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </label>
-            <label class="form-label small">
+            <label class="form-label-3 small">
               Comment
               <textarea
                 class="form-textarea"
                 name="comment"
                 placeholder="Text input"
-                rows="6"
-              ></textarea>
+                rows="5"
+                cols="50"
+              >
+              </textarea>
             </label>
             <label class="form-label-2 small">
               <input
