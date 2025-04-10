@@ -1136,7 +1136,7 @@ main {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1157px) {
+@media (min-width: 768px) {
   /* section properties */
   section {
     padding: 96px 0;
