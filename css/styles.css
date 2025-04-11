@@ -1497,6 +1497,7 @@ main {
 
   /* header properties */
   .page-header .container {
+    padding: 0 156px;
     gap: 76px;
   }
 
