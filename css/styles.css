@@ -122,9 +122,7 @@ body {
 /* buton properties */
 button {
   width: auto;
-  /* min-width: 169px; */
   height: auto;
-  /* min-height: 56px; */
   background-color: var(--iris);
   color: var(--white);
   border-radius: 4px;
@@ -180,7 +178,6 @@ main {
   position: fixed;
   top: 0;
   left: auto;
-  /* width: 100%; */
   height: 56px;
   background-color: var(--white);
   border-bottom: 1px solid var(--cornflower);
@@ -195,7 +192,6 @@ main {
   gap: 149px;
   justify-content: space-between;
   align-items: center;
-  /* width: 100%; */
   height: 100%;
   padding: 16px;
 }
@@ -242,7 +238,6 @@ main {
   top: 0;
   right: -1px;
   width: 322px;
-  /* height: 640px; */
   background-color: var(--white);
   display: none;
   padding: 24px 24px 40px 16px;
@@ -254,9 +249,7 @@ main {
   flex-direction: column;
   gap: 40px;
   justify-content: flex-start;
-  /* align-items: center; */
   text-align: left;
-  /* height: 200px; */
   margin-bottom: 168px;
 }
 
@@ -339,7 +332,6 @@ main {
   color: var(--slate);
   font-weight: var(--medium);
   font-size: 20px;
-  /* line-height: 1.11; */
   letter-spacing: 0.4px; /* %2 harf aralığı - 20px font büyüklüğü için 0.4px eder */
   text-decoration: none;
   transition-property: color;
@@ -412,14 +404,12 @@ main {
   position: relative;
   margin: 56px auto 0;
   padding: 0;
-  /* width: 320px; */
   height: 432px;
   z-index: 90;
 }
 
 .hero .container {
   position: relative;
-  /* width: 320px; */
   height: 432px;
   z-index: 100;
   background-image: url(../images/hero-320.jpg);
@@ -474,7 +464,6 @@ main {
   margin: 0 auto;
   background-color: var(--white);
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
 }
 
@@ -957,7 +946,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 72px;
-  /* width: 320px; */
   padding: 96px 16px;
 }
 
@@ -1149,14 +1137,12 @@ main {
 
   /* header properties */
   .page-header {
-    /* width: 768px; */
     height: 72px;
   }
 
   .page-header .container {
     gap: 120px;
     padding: 16px;
-    /* align-items: center; */
   }
 
   .page-header .container .logo {
@@ -1238,7 +1224,6 @@ main {
     font-weight: var(--regular);
     font-style: normal;
     font-size: 12px;
-    /* line-height: 1.16; */
     letter-spacing: 0.48px; /* %4 harf aralığı - 12px font büyüklüğü için 0.48px eder */
   }
 
@@ -1260,14 +1245,11 @@ main {
   /* hero */
   .hero {
     margin: 72px auto 0;
-    /* width: 768px; */
     height: 436px;
   }
 
   .hero .container {
     background-image: url(../images/hero-768.jpg);
-    /* width: 100%; */
-    /* min-width: 768px; */
     height: 436px;
     gap: 36px;
     padding: 112px 136px;
@@ -1288,7 +1270,6 @@ main {
 
   /* services */
   .services {
-    /* margin: 0 auto; */
     padding: 0;
   }
 
@@ -1427,16 +1408,16 @@ main {
   /* footer */
   .page-footer {
     height: 456px;
-    margin-bottom: 0;
-    padding: 0 164px 0 108px;
   }
 
   .page-footer .container {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: center;
     gap: 24px;
     width: 768px;
+    padding: 0 auto;
   }
 
   .page-footer .ft-logo {
@@ -1541,14 +1522,11 @@ main {
 
   /* hero */
   .hero {
-    /* width: 1440px; */
     height: 600px;
   }
 
   .hero .container {
     background-image: url(../images/hero-1158.jpg);
-    /* width: 100%; */
-    /* min-width: 1440px; */
     height: 600px;
     gap: 48px;
     padding: 188px 472px;
@@ -1625,7 +1603,6 @@ main {
 
   .team .container {
     padding: 120px 15px;
-    /* width: 1440px; */
     height: 780px;
   }
 
@@ -1691,7 +1668,6 @@ main {
   /* footer */
   .page-footer {
     height: 312px;
-    /* margin-bottom: 0; */
     padding: 0 15px;
   }
 
