@@ -180,7 +180,7 @@ main {
   position: fixed;
   top: 0;
   left: auto;
-  width: 320px;
+  /* width: 100%; */
   height: 56px;
   background-color: var(--white);
   border-bottom: 1px solid var(--cornflower);
@@ -195,7 +195,7 @@ main {
   gap: 149px;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   padding: 16px;
 }
@@ -412,14 +412,14 @@ main {
   position: relative;
   margin: 56px auto 0;
   padding: 0;
-  width: 320px;
+  /* width: 320px; */
   height: 432px;
   z-index: 90;
 }
 
 .hero .container {
   position: relative;
-  width: 320px;
+  /* width: 320px; */
   height: 432px;
   z-index: 100;
   background-image: url(../images/hero-320.jpg);
@@ -957,7 +957,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 72px;
-  width: 320px;
+  /* width: 320px; */
   padding: 96px 16px;
 }
 
@@ -1144,12 +1144,12 @@ main {
 
   /* container properties */
   .container {
-    min-width: 768px;
+    max-width: 768px;
   }
 
   /* header properties */
   .page-header {
-    width: 768px;
+    /* width: 768px; */
     height: 72px;
   }
 
@@ -1260,14 +1260,14 @@ main {
   /* hero */
   .hero {
     margin: 72px auto 0;
-    width: 768px;
+    /* width: 768px; */
     height: 436px;
   }
 
   .hero .container {
     background-image: url(../images/hero-768.jpg);
-    width: 100%;
-    min-width: 768px;
+    /* width: 100%; */
+    /* min-width: 768px; */
     height: 436px;
     gap: 36px;
     padding: 112px 136px;
@@ -1511,12 +1511,12 @@ main {
 
   /* container properties */
   .container {
-    min-width: 1158px;
+    max-width: 1440px;
   }
 
   /* header properties */
   .page-header {
-    width: 1440px;
+    /* width: 1440px; */
   }
 
   .page-header .container {
@@ -1544,19 +1544,19 @@ main {
   }
 
   .navbar address a:last-child {
-    opacity: 0.51;
+    /* opacity: 0.51; */
   }
 
   /* hero */
   .hero {
-    width: 1440px;
+    /* width: 1440px; */
     height: 600px;
   }
 
   .hero .container {
     background-image: url(../images/hero-1158.jpg);
-    width: 100%;
-    min-width: 1440px;
+    /* width: 100%; */
+    /* min-width: 1440px; */
     height: 600px;
     gap: 48px;
     padding: 188px 472px;
@@ -1633,7 +1633,7 @@ main {
 
   .team .container {
     padding: 120px 15px;
-    width: 1440px;
+    /* width: 1440px; */
     height: 780px;
   }
 
@@ -1660,6 +1660,7 @@ main {
   /* portfolio */
   .portfolio .container {
     padding: 0 15px;
+    max-width: 1158px;
   }
 
   .portfolio .card {
@@ -1672,7 +1673,7 @@ main {
     left: 0;
     bottom: 0;
     content: "";
-    width: 360px;
+    width: 100%;
     height: 300px;
     background-color: var(--iris);
     color: var(--white);
@@ -1703,7 +1704,7 @@ main {
   }
 
   .page-footer .container {
-    width: 1158px;
+    min-width: 1158px;
     gap: 80px;
   }
 
