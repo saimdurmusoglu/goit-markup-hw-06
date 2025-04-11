@@ -422,7 +422,7 @@ main {
   width: 320px;
   height: 432px;
   z-index: 100;
-  background-image: url(../images/people-office.jpg);
+  background-image: url(../images/hero-320.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1265,6 +1265,7 @@ main {
   }
 
   .hero .container {
+    background-image: url(../images/hero-768.jpg);
     width: 100%;
     min-width: 768px;
     height: 436px;
@@ -1553,6 +1554,7 @@ main {
   }
 
   .hero .container {
+    background-image: url(../images/hero-1158.jpg);
     width: 100%;
     min-width: 1440px;
     height: 600px;
@@ -1714,5 +1716,23 @@ main {
   .page-footer .social {
     width: 208px;
     height: 80px;
+  }
+}
+
+@media (min-resolution: 2x) and (max-width: 767px) {
+  .hero .container {
+    background-image: url(../images/hero-320@2x.jpg);
+  }
+}
+
+@media (min-resolution: 2x) and (max-width: 1157px) {
+  .hero .container {
+    background-image: url(../images/hero-768@2x.jpg);
+  }
+}
+
+@media (min-resolution: 2x) and (min-width: 1158px) {
+  .hero .container {
+    background-image: url(../images/hero-1158@2x.jpg);
   }
 }
